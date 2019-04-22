@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="student" class="org.katheer.bean.Student">
+        <property name="name" value=""/>
+        <property name="age" value="-1"/>
+        <property name="regNo" value="S-101"/>
+        <property name="dept" value="IT"/>
+        <property name="sem" value="VIII"/>
+        <property name="cgpa" value="-1"/>
+    </bean>
+
+    <bean id="validator"
+          class="org.katheer.bean.validator.StudentValidator"/>
+</beans>
